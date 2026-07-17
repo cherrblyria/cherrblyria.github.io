@@ -1,0 +1,101 @@
+@import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
+
+*{
+  transition: all 50ms;
+}
+
+body {
+  font-family:
+    Rubik,
+    Noto Sans Thai Looped,
+    sans-serif;
+  background-image: url("bg.png");
+  background-size: cover;
+  color: var(--ctp-mocha-text);
+}
+#root {
+  background-color: rgba(var(--ctp-mocha-base-rgb) / 0.9);
+  max-width: 650px;
+  margin: 1.5em auto;
+  padding: 1.5em;
+  border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
+  border-radius: 3.5em;
+}
+section {
+  background-color: var(--ctp-mocha-mantle);
+  border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
+  border-radius: 2em;
+  padding: 0.1em 1em;
+  margin: 1em auto;
+}
+section:last-child {
+  margin-bottom: 0;
+}
+
+.background-source {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1em;
+  color: var(--ctp-mocha-overlay0);
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+.deco {
+  font-size: 1em;
+  text-align: center;
+  color: var(--ctp-mocha-subtext0);
+}
+.name {
+  color: var(--ctp-mocha-pink);
+  font-weight: 700;
+}
+
+#language p,
+#contact p {
+  display: flex;
+  gap: 0.6em;
+}
+
+a {
+  color: var(--ctp-mocha-blue);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--ctp-mocha-blue);
+}
+a:hover {
+  text-decoration: underline;
+}
+.icon:hover {
+  text-decoration: none;
+}
+
+#html {
+  color: var(--ctp-mocha-peach);
+}
+#css {
+  color: var(--ctp-mocha-sapphire);
+}
+#js {
+  color: var(--ctp-mocha-yellow);
+}
+#python {
+  color: var(--ctp-mocha-text);
+}
+#email {
+  color: var(--ctp-mocha-rosewater);
+}
+#discord {
+  color: var(--ctp-mocha-blue);
+}
+#instagram {
+  color: var(--ctp-mocha-pink);
+}
+#github {
+  color: var(--ctp-mocha-mauve);
+}
