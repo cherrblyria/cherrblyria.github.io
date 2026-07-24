@@ -21,7 +21,7 @@ body {
 #root {
   background-color: rgba(var(--ctp-mocha-base-rgb) / 0.9);
   max-width: 650px;
-  margin: 1.5em auto;
+  margin: 1.5em 0.5em;
   padding: 1.5em;
   border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
   border-radius: 3.5em;
