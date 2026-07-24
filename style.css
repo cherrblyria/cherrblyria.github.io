@@ -1,6 +1,6 @@
 @import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
 
-*{
+* {
   transition: all 50ms;
 }
 
@@ -12,12 +12,13 @@ body {
   color: var(--ctp-mocha-text);
   min-height: 100vh;
   margin: 0.5em;
-  background-image: url("bg.png");
+  background-image: url("assets/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 #root {
   background-color: rgba(var(--ctp-mocha-base-rgb) / 0.9);
   max-width: 650px;
@@ -26,6 +27,7 @@ body {
   border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
   border-radius: 3.5em;
 }
+
 section {
   background-color: var(--ctp-mocha-mantle);
   border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
@@ -33,6 +35,7 @@ section {
   padding: 0.1em 1em;
   margin: 1em auto;
 }
+
 section:last-child {
   margin-bottom: 0;
 }
@@ -50,11 +53,13 @@ h2 {
   font-size: 2em;
   text-align: center;
 }
+
 .deco {
   font-size: 1em;
   text-align: center;
   color: var(--ctp-mocha-subtext0);
 }
+
 .name {
   color: var(--ctp-mocha-pink);
   font-weight: 700;
@@ -70,12 +75,15 @@ a {
   color: var(--ctp-mocha-blue);
   text-decoration: none;
 }
+
 a:visited {
   color: var(--ctp-mocha-blue);
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .icon:hover {
   text-decoration: none;
 }
@@ -83,24 +91,31 @@ a:hover {
 #html {
   color: var(--ctp-mocha-peach);
 }
+
 #css {
   color: var(--ctp-mocha-sapphire);
 }
+
 #js {
   color: var(--ctp-mocha-yellow);
 }
+
 #python {
   color: var(--ctp-mocha-text);
 }
+
 #email {
   color: var(--ctp-mocha-rosewater);
 }
+
 #discord {
   color: var(--ctp-mocha-blue);
 }
+
 #instagram {
   color: var(--ctp-mocha-pink);
 }
+
 #github {
   color: var(--ctp-mocha-mauve);
 }
