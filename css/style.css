@@ -53,8 +53,8 @@ section:last-child {
 
 .background-source {
   position: absolute;
-  top: 1em;
-  left: 1em;
+  bottom: 1em;
+  right: 1em;
   font-size: 1em;
   color: var(--ctp-latte-overlay0);
 }
