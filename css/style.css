@@ -9,10 +9,8 @@ body {
     Rubik,
     Noto Sans Thai Looped,
     sans-serif;
-  color: var(--ctp-mocha-text);
-  min-height: 100vh;
-  margin: 0.5em;
-  background-image: url("assets/bg.png");
+  color: var(--ctp-latte-text);
+  background-image: url("/assets/bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,18 +18,19 @@ body {
 }
 
 #root {
-  background-color: rgba(var(--ctp-mocha-base-rgb) / 0.9);
+  background-color: rgba(var(--ctp-latte-base-rgb) / 0.4);
+  backdrop-filter: blur(6px);
   max-width: 650px;
   margin: 1.5em auto 0 auto;
   padding: 1.5em;
-  border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
-  border-radius: 3.5em;
+  border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
+  border-radius: 2.5em;
 }
 
 section {
-  background-color: var(--ctp-mocha-mantle);
-  border: 1px solid rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
-  border-radius: 2em;
+  background-color: rgba(var(--ctp-latte-mantle-rgb) / 0.7);
+  border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
+  border-radius: 1em;
   padding: 0.1em 1em;
   margin: 1em auto;
 }
@@ -45,7 +44,7 @@ section:last-child {
   top: 1em;
   left: 1em;
   font-size: 1em;
-  color: var(--ctp-mocha-overlay0);
+  color: var(--ctp-latte-overlay0);
 }
 
 h2 {
@@ -57,11 +56,11 @@ h2 {
 .deco {
   font-size: 1em;
   text-align: center;
-  color: var(--ctp-mocha-subtext0);
+  color: var(--ctp-latte-subtext0);
 }
 
 .name {
-  color: var(--ctp-mocha-pink);
+  color: var(--ctp-latte-pink);
   font-weight: 700;
 }
 
@@ -72,50 +71,69 @@ h2 {
 }
 
 a {
-  color: var(--ctp-mocha-blue);
+  color: var(--ctp-latte-blue);
   text-decoration: none;
 }
 
 a:visited {
-  color: var(--ctp-mocha-blue);
+  color: var(--ctp-latte-blue);
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-.icon:hover {
+a.icon {
+  display: flex;
+  align-items: center;
+}
+
+a.icon:hover {
   text-decoration: none;
 }
 
 #html {
-  color: var(--ctp-mocha-peach);
+  color: var(--ctp-latte-peach);
 }
 
 #css {
-  color: var(--ctp-mocha-sapphire);
+  color: var(--ctp-latte-sapphire);
 }
 
 #js {
-  color: var(--ctp-mocha-yellow);
+  color: var(--ctp-latte-yellow);
 }
 
 #python {
-  color: var(--ctp-mocha-text);
+  width: 2em;
+  height: 2em;
+}
+
+#python .snake-blue {
+  fill: var(--ctp-latte-blue);
+}
+
+#python .snake-yellow {
+  fill: var(--ctp-latte-yellow);
+}
+
+#nix {
+  width: 1.9em;
+  height: 1.9em;
 }
 
 #email {
-  color: var(--ctp-mocha-rosewater);
+  color: var(--ctp-latte-rosewater);
 }
 
 #discord {
-  color: var(--ctp-mocha-blue);
+  color: var(--ctp-latte-blue);
 }
 
 #instagram {
-  color: var(--ctp-mocha-pink);
+  color: var(--ctp-latte-pink);
 }
 
 #github {
-  color: var(--ctp-mocha-mauve);
+  color: var(--ctp-latte-mauve);
 }
