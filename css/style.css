@@ -4,6 +4,18 @@
   transition: all 50ms;
 }
 
+noscript>div {
+  backdrop-filter: blur(6px);
+  background-color: rgba(var(--ctp-latte-red-rgb) / 0.4);
+  border-radius: 2.5em;
+  border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
+  color: var(--ctp-latte-base);
+  margin: 1.5em auto 0 auto;
+  max-width: 650px;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
 body {
   font-family:
     Rubik,
@@ -18,13 +30,13 @@ body {
 }
 
 #root {
-  background-color: rgba(var(--ctp-latte-base-rgb) / 0.4);
   backdrop-filter: blur(6px);
-  max-width: 650px;
-  margin: 1.5em auto 0 auto;
-  padding: 1.5em;
-  border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
+  background-color: rgba(var(--ctp-latte-base-rgb) / 0.4);
   border-radius: 2.5em;
+  border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
+  margin: 1.5em auto 0 auto;
+  max-width: 650px;
+  padding: 1.5em;
 }
 
 section {
