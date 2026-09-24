@@ -1,3 +1,35 @@
+// Particle Cursor
+const container = document.getElementById('particle-cursor');
+
+document.addEventListener('mousemove', (e) => {
+  createParticle(e.clientX, e.clientY);
+});
+
+function createParticle(x, y) {
+  const particle = document.createElement('div');
+  particle.classList.add('particle');
+  
+  particle.style.left = `${x}px`;
+  particle.style.top = `${y}px`;
+  
+  const size = Math.random() * 15 + 5;
+  particle.style.width = `${size}px`;
+  particle.style.height = `${size}px`;
+  
+  const moveX = (Math.random() - 0.5) * 100;
+  const moveY = (Math.random() - 0.5) * 100;
+  particle.style.setProperty('--move-x', `${moveX}px`);
+  particle.style.setProperty('--move-y', `${moveY}px`);
+  
+  container.appendChild(particle);
+  
+  setTimeout(() => {
+    particle.remove();
+  }, 1000);
+}
+
+// Age
+
 const birthDate = new Date('2011-09-12');
 const today = new Date();
 
@@ -12,6 +44,8 @@ const ageSpan = document.querySelector('.age');
 if (ageSpan) {
   ageSpan.textContent = `${age} years old`;
 }
+
+// Parallax Background
 
 const root = document.querySelector("#root");
 

@@ -23,6 +23,38 @@ noscript>div {
   font-size: 1.5em;
 }
 
+#particle-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--ctp-frappe-rosewater) 0%, var(--ctp-frappe-mauve) 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: flyAndFade 1s forwards ease-out;
+}
+
+@keyframes flyAndFade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--move-x)),
+        calc(-50% + var(--move-y))) scale(0);
+  }
+}
+
 body {
   font-family:
     Rubik,
@@ -30,7 +62,8 @@ body {
     sans-serif;
   color: var(--ctp-latte-text);
   background-color: var(--ctp-latte-base);
-  overflow-x: hidden;
+  overflow: hidden;
+  /* cursor: none; */
 }
 
 body::before {

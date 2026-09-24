@@ -103,9 +103,9 @@
   --ctp-latte-crust-rgb: 220 224 232;
   --ctp-latte-crust-hsl: 220.000 20.690% 88.627%;
   --ctp-latte-crust-oklch: 0.9060 0.0117 264.5071;
-}
 
-:root {
+
+
   --ctp-frappe-rosewater: #f2d5cf;
   --ctp-frappe-rosewater-rgb: 242 213 207;
   --ctp-frappe-rosewater-hsl: 10.286 57.377% 88.039%;
@@ -210,9 +210,9 @@
   --ctp-frappe-crust-rgb: 35 38 52;
   --ctp-frappe-crust-hsl: 229.412 19.540% 17.059%;
   --ctp-frappe-crust-oklch: 0.2720 0.0264 275.1154;
-}
 
-:root {
+
+
   --ctp-macchiato-rosewater: #f4dbd6;
   --ctp-macchiato-rosewater-rgb: 244 219 214;
   --ctp-macchiato-rosewater-hsl: 10.000 57.692% 89.804%;
@@ -317,9 +317,9 @@
   --ctp-macchiato-crust-rgb: 24 25 38;
   --ctp-macchiato-crust-hsl: 235.714 22.581% 12.157%;
   --ctp-macchiato-crust-oklch: 0.2188 0.0255 280.6572;
-}
 
-:root {
+
+
   --ctp-mocha-rosewater: #f5e0dc;
   --ctp-mocha-rosewater-rgb: 245 224 220;
   --ctp-mocha-rosewater-hsl: 9.600 55.556% 91.176%;
