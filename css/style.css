@@ -1,5 +1,16 @@
 @import url("catppuccin.css");
 
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
 noscript>div {
   backdrop-filter: blur(6px);
   background-color: rgba(var(--ctp-latte-red-rgb) / 0.4);
