@@ -1,9 +1,5 @@
 @import url("catppuccin.css");
 
-* {
-  transition: all 50ms;
-}
-
 noscript>div {
   backdrop-filter: blur(6px);
   background-color: rgba(var(--ctp-latte-red-rgb) / 0.4);
@@ -22,11 +18,25 @@ body {
     Noto Sans Thai Looped,
     sans-serif;
   color: var(--ctp-latte-text);
+  background-color: var(--ctp-latte-base);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: -30px;
+
   background-image: url("/assets/bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
+  transform: translate3d(var(--bg-x, 0px),
+      var(--bg-y, 0px),
+      0);
+  will-change: transform;
 }
 
 #root {
@@ -34,12 +44,20 @@ body {
   background-color: rgba(var(--ctp-latte-base-rgb) / 0.4);
   border-radius: 2.5em;
   border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
+  box-shadow: 0 0 12px 7px rgba(var(--ctp-latte-text-rgb) / 0.2);
+
   margin: 1.5em auto 0 auto;
   max-width: 650px;
   padding: 1.5em;
+
+  transform: translate3d(var(--root-x, 0px),
+      var(--root-y, 0px),
+      0);
+  will-change: transform;
 }
 
 section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: rgba(var(--ctp-latte-mantle-rgb) / 0.7);
   border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
   border-radius: 1em;
@@ -49,6 +67,10 @@ section {
 
 section:last-child {
   margin-bottom: 0;
+}
+
+section:hover {
+  box-shadow: 0 0 12px 7px rgba(var(--ctp-latte-text-rgb) / 0.2);
 }
 
 .background-source {
@@ -63,6 +85,7 @@ h2 {
   font-weight: 500;
   font-size: 2em;
   text-align: center;
+  text-shadow: 0 0 3px rgba(var(--ctp-latte-text-rgb) / 0.5);
 }
 
 .deco {
@@ -72,8 +95,10 @@ h2 {
 }
 
 .name {
-  color: var(--ctp-latte-pink);
+  color: var(--ctp-latte-mauve);
+  filter: brightness(115%);
   font-weight: 700;
+  text-shadow: 0 0 3px rgba(var(--ctp-latte-text-rgb) / 0.5);
 }
 
 #language p,
