@@ -4,11 +4,11 @@
 
 - Memory bank initialized (this file set) — first documentation of the project.
 - Site is functional and complete as a single-page landing site.
-- Latest local work (2026-10-15): 3 commits on `main` — `feat: remove cursor effect`, `feat: center root on screen`, `chore: add memory bank`. Not yet pushed to `origin/main`.
+- Latest work (2026-10-15): 3 commits on `main` — `feat: remove cursor effect`, `feat: center root on screen`, `chore: add memory bank` — pushed to `origin/main` (`3721c2f..4b32fb7`); GitHub Pages auto-deploys on push.
 
 ## Recent Changes
 
-- (2026-10-15) Committed all session work as 3 commits (cursor removal, root centering, memory bank docs); also removed a stray blank line artifact in `script.js`.
+- (2026-10-15) Committed all session work as 3 commits (cursor removal, root centering, memory bank docs) and pushed to `origin/main`; also removed a stray blank line artifact in `script.js`.
 - (2026-10-15) `#root` re-anchored: base position is now absolute screen center (`position: fixed; top/left: 50%` + `translate(-50%,-50%)`), with parallax `translate3d` composed on top — the card still moves, but always around a centered base. Sized with `min(650px+3em+2px, 100vw−2em−16px)` width and `max-height: 100dvh−2em−16px` + internal hidden-scrollbar overflow so it fits every viewport.
 - (2026-10-15) Removed the particle cursor effect entirely (`#particle-cursor` div, `.particle` styles, `flyAndFade` keyframes, and the `createParticle` logic in `script.js`).
 - (Initialization) Documented existing codebase: `index.html`, `css/style.css`, `css/catppuccin.css`, `script.js`, `assets/`.

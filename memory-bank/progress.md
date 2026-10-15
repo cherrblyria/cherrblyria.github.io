@@ -14,17 +14,17 @@
 ## What's Left to Build
 
 - No explicitly requested features pending. Candidates if the user wants them:
-  - Scroll support / viewport fitting if content grows (`overflow: hidden` currently).
+  - Page-level scroll for content outside `#root` (currently clipped by `body { overflow: hidden }`; content inside `#root` already scrolls internally).
   - Reduced-motion media query for parallax.
   - Dark theme variant (only latte tokens are used; catppuccin.css may contain other schemes).
 
 ## Current Status
 
-- Particle cursor effect removed entirely (2026-10-15) — site now has parallax + dynamic age only. Memory bank kept in sync.
+- (2026-10-15) Session work complete: particle cursor removed, `#root` centered, memory bank initialized — 3 commits pushed to `origin/main` (tip `4b32fb7`), GitHub Pages auto-deploys. Site now has parallax + dynamic age only.
 
 ## Known Issues
 
-- `body { overflow: hidden }` — content overflow would be clipped/unreachable on small screens.
+- `body { overflow: hidden }` — anything *outside* `#root` that grows past the viewport is clipped/unreachable (content inside `#root` scrolls internally since the centering change).
 - `noscript>div` selector in CSS won't match the actual `<noscript><div>` structure reliably across browsers (noscript content parsing differs); fallback styling may not apply.
 - Absolute `/assets/bg.webp` path breaks if site is served from a subpath.
 

@@ -3,7 +3,7 @@
 ## Technologies
 
 - **HTML5** — single `index.html`, `lang="en"`, viewport meta, noscript fallback.
-- **CSS3** — custom properties, `backdrop-filter`, `@keyframes`, `translate3d` transforms, CSS `@import` for theme file. No preprocessor.
+- **CSS3** — custom properties, `backdrop-filter`, `translate3d` transforms, CSS `@import` for theme file. No preprocessor. (No `@keyframes` remain after the particle-cursor removal.)
 - **Vanilla JavaScript (ES module)** — `script.js` loaded with `<script type="module">`. No dependencies, no npm/package.json.
 - **Hosting** — GitHub Pages via user site repo `cherrblyria/cherrblyria.github.io` (branch `main`).
 
@@ -32,3 +32,4 @@
 - `/script.js`
 - `/assets/favicon.ico`, `/assets/bg.webp`
 - `/.clinerules/memory-bank.md` (memory bank rules)
+- `/memory-bank/*.md` (project docs: brief, contexts, patterns, progress)
