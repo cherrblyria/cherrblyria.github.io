@@ -52,20 +52,38 @@ body::before {
 }
 
 #root {
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
   backdrop-filter: blur(6px);
   background-color: rgba(var(--ctp-latte-base-rgb) / 0.4);
   border-radius: 2.5em;
   border: 1px solid rgba(var(--ctp-latte-overlay2-rgb) / 0.3);
   box-shadow: 0 0 12px 7px rgba(var(--ctp-latte-text-rgb) / 0.2);
 
-  margin: 1.5em auto 0 auto;
-  max-width: 650px;
+  /* Total box fits any viewport: 650px design width + padding/border,
+     capped at viewport minus 2em gutter and 16px parallax travel (±8px) */
+  width: min(calc(650px + 3em + 2px), calc(100vw - 2em - 16px));
+  max-height: calc(100vh - 2em - 16px);
+  max-height: calc(100dvh - 2em - 16px);
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  margin: 0;
   padding: 1.5em;
 
-  transform: translate3d(var(--root-x, 0px),
+  /* Base position = absolute screen center; parallax offsets on top */
+  transform: translate(-50%, -50%) translate3d(var(--root-x, 0px),
       var(--root-y, 0px),
       0);
   will-change: transform;
+}
+
+#root::-webkit-scrollbar {
+  display: none;
 }
 
 section {
