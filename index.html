@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,11 @@
   </head>
 
   <body
-    class="font-raleway absolute inset-0 h-full w-full bg-mauve-200 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] p-5 pr-20 pl-20 text-mauve-900 text-shadow-2xs dark:bg-mauve-900 dark:text-mauve-100"
+    class="font-raleway absolute inset-0 h-full w-full bg-mauve-200 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] p-5 text-mauve-900 text-shadow-2xs md:px-20 dark:bg-mauve-900 dark:text-mauve-100"
   >
+    <div id="top" class="absolute top-0 left-0"></div>
     <header
-      class="mr-45 ml-45 grid grid-cols-3 items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-3.5 pr-4.5 pl-4.5 shadow backdrop-blur-sm dark:border-mauve-700 dark:bg-mauve-800/75"
+      class="grid grid-cols-3 items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-3.5 px-4.5 shadow backdrop-blur-sm md:mx-45 dark:border-mauve-700 dark:bg-mauve-800/75"
     >
       <a
         href="#home"
@@ -19,14 +20,14 @@
         >Codeblyria</a
       >
       <nav
-        class="font-fraunces flex justify-center text-lg font-medium text-shadow-md"
+        class="font-fraunces justify-safe-center invisible flex space-x-6 text-lg font-medium text-shadow-md md:visible"
       >
         <a href="#about" class="hover:underline">about</a>
-        <span class="mr-6 ml-6 font-light text-mauve-500">|</span>
+        <span class="font-light text-mauve-500">|</span>
         <a href="#projects" class="hover:underline">projects</a>
-        <span class="mr-6 ml-6 font-light text-mauve-500">|</span>
+        <span class="font-light text-mauve-500">|</span>
         <a href="#stack" class="hover:underline">stack</a>
-        <span class="mr-6 ml-6 font-light text-mauve-500">|</span>
+        <span class="font-light text-mauve-500">|</span>
         <a href="#contact" class="hover:underline">contact</a>
       </nav>
     </header>
@@ -34,10 +35,10 @@
     <main>
       <section
         id="home"
-        class="mt-5 grid grid-cols-4 grid-rows-2 justify-items-stretch gap-5"
+        class="gird-cols-2 mt-5 grid justify-items-stretch gap-5 md:grid-cols-4 md:grid-rows-2"
       >
         <div
-          class="col-span-2 row-span-2 rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-103 dark:border-mauve-700 dark:bg-mauve-800/75"
+          class="col-span-2 rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-103 md:row-span-2 dark:border-mauve-700 dark:bg-mauve-800/75"
         >
           <h1 class="font-fraunces text-5xl">
             Hai, it's me
@@ -55,7 +56,7 @@
         </div>
 
         <div
-          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 dark:border-mauve-700 dark:bg-mauve-800/75"
+          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12 dark:border-mauve-700 dark:bg-mauve-800/75"
         >
           <a
             href="#about"
@@ -68,7 +69,7 @@
           </p>
         </div>
         <div
-          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 dark:border-mauve-700 dark:bg-mauve-800/75"
+          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12 dark:border-mauve-700 dark:bg-mauve-800/75"
         >
           <a
             href="#projects"
@@ -81,7 +82,7 @@
           </p>
         </div>
         <div
-          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 dark:border-mauve-700 dark:bg-mauve-800/75"
+          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12 dark:border-mauve-700 dark:bg-mauve-800/75"
         >
           <a
             href="#stack"
@@ -94,7 +95,7 @@
           </p>
         </div>
         <div
-          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 dark:border-mauve-700 dark:bg-mauve-800/75"
+          class="items-center rounded-3xl border-2 border-mauve-400 bg-mauve-300/75 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12 dark:border-mauve-700 dark:bg-mauve-800/75"
         >
           <a
             href="#contact"
@@ -108,6 +109,11 @@
         </div>
       </section>
     </main>
+
+    <footer class="mt-5 flex justify-between text-sm">
+      <p>&copy; 2026 cherrblyria</p>
+      <a href="#top"> back to top ↑ </a>
+    </footer>
 
     <script type="module" src="src/script.js"></script>
   </body>
