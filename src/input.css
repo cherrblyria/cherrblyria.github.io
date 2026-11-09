@@ -6,4 +6,27 @@
   --font-raleway: "Raleway", sans-serif;
   --font-playfair-display: "Playfair Display", serif;
   --font-fraunces: "Fraunces", serif;
+
+  --color-accent: var(--color-rose-300);
+  --color-on-accent: var(--color-mauve-900);
+
+  --color-canvas: var(--color-mauve-200);
+  --color-surface: var(--color-mauve-300);
+  --color-edge: var(--color-mauve-400);
+  --color-ink: var(--color-mauve-900);
+  --color-ink-soft: var(--color-mauve-500);
+  --color-grid-line: --alpha(var(--color-ink-soft) / 15%);
+
+  --background-image-grid:
+    linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: var(--color-mauve-900);
+    --color-surface: var(--color-mauve-800);
+    --color-edge: var(--color-mauve-700);
+    --color-ink: var(--color-mauve-100);
+  }
 }
