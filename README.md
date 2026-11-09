@@ -10,20 +10,20 @@ install deps
 npm install
 ```
 
-preview
+dev
 
 ```bash
-npx serve
+npm run dev
 ```
 
 build css
 
 ```bash
-npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+npm run css
 ```
 
 format
 
 ```
-npx prettier --write .
+npm run format
 ```
