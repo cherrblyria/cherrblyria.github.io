@@ -24,6 +24,6 @@ npm run css
 
 format
 
-```
+```bash
 npm run format
 ```
