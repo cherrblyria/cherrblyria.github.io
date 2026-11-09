@@ -4,7 +4,15 @@
     "tailwindcss": "^4.3.5"
   },
   "devDependencies": {
+    "concurrently": "^10.0.7",
     "prettier": "^3.9.10",
-    "prettier-plugin-tailwindcss": "^0.8.1"
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "serve": "^14.2.7"
+  },
+  "scripts": {
+    "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "serve": "serve",
+    "dev": "concurrently \"npm:css\" \"npm:serve\"",
+    "format": "prettier --write ."
   }
 }
