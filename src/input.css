@@ -15,7 +15,7 @@
   --color-edge: var(--color-mauve-400);
   --color-ink: var(--color-mauve-900);
   --color-ink-soft: var(--color-mauve-500);
-  --color-grid-line: --alpha(var(--color-ink-soft) / 15%);
+  --color-grid-line: --alpha(var(--color-ink-soft) / 10%);
 
   --background-image-grid:
     linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
@@ -29,4 +29,8 @@
     --color-edge: var(--color-mauve-700);
     --color-ink: var(--color-mauve-100);
   }
+}
+
+.scrolled {
+  @apply bg-surface/75 p-0.5 pl-3 shadow-lg backdrop-blur-xs md:gap-4.5 md:p-1 md:pl-3.5;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scrollbar-none scroll-smooth md:scrollbar-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,51 +8,53 @@
   </head>
 
   <body
-    class="font-raleway bg-canvas bg-grid text-ink relative bg-size-[24px_24px] p-5 text-shadow-2xs md:px-20"
+    class="font-raleway bg-canvas bg-grid text-ink bg-size-[36px_36px] p-5 pt-0 text-shadow-2xs md:px-[8%]"
   >
     <div id="top" class="absolute top-0 right-0 left-0"></div>
-    <header
-      class="border-edge bg-surface/75 fixed left-1/2 grid w-[80%] -translate-x-1/2 grid-cols-2 items-center gap-1 rounded-3xl border-2 p-2 pl-4.5 shadow backdrop-blur-xs md:grid-cols-[1fr_auto_1fr] md:gap-6 md:px-4.5"
-    >
-      <a
-        href="#top"
-        class="font-playfair-display justify-self-start text-2xl font-black text-shadow-md"
+    <header class="pointer-events-none sticky top-0 right-0 left-0 z-1000 pt-5">
+      <div
+        class="border-edge bg-surface pointer-events-auto mx-auto grid w-[80%] max-w-[90%] grid-cols-2 items-center gap-1 overflow-hidden rounded-full border-2 p-2 pl-4.5 transition-all duration-300 ease-in-out md:grid-cols-[1fr_auto_1fr] md:gap-6 md:p-4 md:pl-6.5"
       >
-        Codeblyria
-      </a>
+        <a
+          href="#top"
+          class="font-playfair-display justify-self-start text-2xl font-black select-none text-shadow-md"
+        >
+          Codeblyria
+        </a>
 
-      <nav
-        class="font-fraunces hidden space-x-6 text-lg font-medium text-shadow-md md:flex"
-      >
-        <a href="#about" class="hover:underline">about</a>
-        <span class="text-ink-soft font-light">|</span>
-        <a href="#projects" class="hover:underline">projects</a>
-        <span class="text-ink-soft font-light">|</span>
-        <a href="#stack" class="hover:underline">stack</a>
-        <span class="text-ink-soft font-light">|</span>
-        <a href="#contact" class="hover:underline">contact</a>
-      </nav>
+        <nav
+          class="font-fraunces hidden space-x-6 text-lg font-medium text-shadow-md md:flex"
+        >
+          <a href="#about" class="hover:underline">about</a>
+          <span class="text-ink-soft font-light select-none">|</span>
+          <a href="#projects" class="hover:underline">projects</a>
+          <span class="text-ink-soft font-light select-none">|</span>
+          <a href="#stack" class="hover:underline">stack</a>
+          <span class="text-ink-soft font-light select-none">|</span>
+          <a href="#contact" class="hover:underline">contact</a>
+        </nav>
 
-      <a
-        href="#contact"
-        class="font-fraunces bg-accent text-md text-on-accent justify-self-end rounded-[1em] p-1.5 hover:brightness-110 active:brightness-110 md:hidden"
-      >
-        wake me up?
-      </a>
+        <a
+          href="#contact"
+          class="font-fraunces bg-accent text-md text-on-accent justify-self-end rounded-[1em] p-1.5 text-nowrap hover:brightness-110 active:brightness-110"
+        >
+          wake me up
+        </a>
+      </div>
     </header>
 
-    <main>
+    <main class="grid-flow-row gap-5 pt-5">
       <section
         id="home"
-        class="gird-cols-2 mt-20 grid justify-items-stretch gap-5 md:grid-cols-4 md:grid-rows-2"
+        class="gird-cols-2 grid justify-items-stretch gap-5 md:h-155 md:grid-cols-4 md:grid-rows-2"
       >
         <div
-          class="border-edge bg-surface/75 col-span-2 rounded-3xl border-2 p-12 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-103 md:row-span-2"
+          class="border-edge bg-surface/75 col-span-2 rounded-3xl border-2 p-12 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg md:row-span-2"
         >
           <h1 class="font-fraunces text-5xl">
             Hai, it's me
             <span
-              class="text-accent hover:text-shadow-accent font-medium italic transition-normal duration-750 ease-in-out hover:text-shadow-lg"
+              class="text-accent hover:text-shadow-accent font-bold italic transition-normal duration-750 ease-in-out hover:text-shadow-lg"
               >Nutty.</span
             >
           </h1>
@@ -65,58 +67,63 @@
         </div>
 
         <div
-          class="border-edge bg-surface/75 items-center rounded-3xl border-2 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12"
+          class="border-edge bg-surface/75 rounded-3xl border-2 p-6 text-center transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg"
         >
-          <a
-            href="#about"
-            class="font-fraunces flex justify-self-center text-lg"
-            >A little about me</a
-          >
-
-          <p class="mt-2 text-center">
-            <i>Almost</i> every things about me.. I think so..
-          </p>
+          <a href="#about">
+            <p class="font-fraunces text-lg font-medium">A little about me</p>
+            <p class="mt-2">
+              A little about the person behind this little corner of the
+              internet.
+            </p>
+          </a>
         </div>
         <div
-          class="border-edge bg-surface/75 items-center rounded-3xl border-2 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12"
+          class="border-edge bg-surface/75 rounded-3xl border-2 p-6 text-center transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg"
         >
-          <a
-            href="#projects"
-            class="font-fraunces flex justify-self-center text-lg"
-            >What I've made</a
-          >
-
-          <p class="mt-2 text-center">
-            Things I've build.. umm.. actually atleast an ideas
-
-          </p>
+          <a href="#projects">
+            <p class="font-fraunces text-lg font-medium">What I've made</p>
+            <p class="mt-2">
+              Things I've build.. umm.. actually atleast an ideas
+            </p>
+          </a>
         </div>
         <div
-          class="border-edge bg-surface/75 items-center rounded-3xl border-2 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12"
+          class="border-edge bg-surface/75 rounded-3xl border-2 p-6 text-center transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg"
         >
-          <a
-            href="#stack"
-            class="font-fraunces flex justify-self-center text-lg"
-            >Stack</a>
-What I use and how I do stuff
-          <p class="mt-2 text-center">
-
-          </p>
+          <a href="#stack">
+            <p class="font-fraunces text-lg font-medium">Stack</p>
+            <p class="mt-2">What I use and how I do stuff</p>
+          </a>
         </div>
         <div
-          class="border-edge bg-surface/75 items-center rounded-3xl border-2 p-6 shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 md:p-12"
+          class="border-edge bg-surface/75 rounded-3xl border-2 p-6 text-center shadow transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
         >
-          <a
-            href="#contact"
-            class="font-fraunces flex justify-self-center text-lg"
-            >Get in touch</a
-          >
-          Have something to tell me?
-          <p class="mt-2 text-center">
-
-          </p>
+          <a href="#contact">
+            <p class="font-fraunces text-lg font-medium">Get in touch</p>
+            <p class="mt-2">Have something to tell me?</p>
+          </a>
         </div>
       </section>
+
+      <section
+        id="about"
+        class="gird-cols-2 grid justify-items-stretch gap-5 md:h-155 md:grid-cols-4 md:grid-rows-2"
+      ></section>
+
+      <section
+        id="projects"
+        class="gird-cols-2 grid justify-items-stretch gap-5 md:h-155 md:grid-cols-4 md:grid-rows-2"
+      ></section>
+
+      <section
+        id="stack"
+        class="gird-cols-2 grid justify-items-stretch gap-5 md:h-155 md:grid-cols-4 md:grid-rows-2"
+      ></section>
+
+      <section
+        id="contact"
+        class="gird-cols-2 grid justify-items-stretch gap-5 md:h-155 md:grid-cols-4 md:grid-rows-2"
+      ></section>
     </main>
 
     <footer class="mt-5 flex justify-between text-xs md:text-sm">
