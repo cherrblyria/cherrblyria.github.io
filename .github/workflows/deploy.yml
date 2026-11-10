@@ -2,7 +2,7 @@ name: pages-build-deployment
 
 on:
   push:
-    branches: [redesign]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
