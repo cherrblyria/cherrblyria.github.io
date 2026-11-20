@@ -10,9 +10,9 @@
     "serve": "^14.2.7"
   },
   "scripts": {
-    "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "format": "prettier --write .",
+    "css": "concurrently \"npm:format\" \"tailwindcss -i ./src/input.css -o ./src/output.css --watch\"",
     "serve": "serve",
-    "dev": "concurrently \"npm:css\" \"npm:serve\"",
-    "format": "prettier --write ."
+    "dev": "concurrently \"format\" \"npm:css\" \"npm:serve\""
   }
 }
