@@ -42,26 +42,29 @@
 @keyframes section-fade-in {
   from {
     opacity: 0;
-    translate: 0 2rem;
+    transform: translateY(2rem);
   }
 
   to {
     opacity: 1;
-    translate: 0 0;
+    transform: translateY(0);
   }
 }
 
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    main > section:not(#home) {
+    /* Animate the card inside the section, not the section itself: the
+       section is the anchor target, and translating it would make the
+       scroll landing point disagree with what's drawn. */
+    .section-reveal {
       animation: section-fade-in linear both;
       animation-timeline: view();
-      /* entry 0% -> 100% = "top edge reaches viewport bottom" to "bottom edge
-         reaches viewport bottom". A distance of the section's own height, so it
-         always completes -- including the last section, which can only travel
-         the footer's height past itself. A cover % grows with the viewport and
-         would stall there on tall screens. */
-      animation-range: entry 0% entry 100%;
+      /* Finish the slide well before the card's scroll-landing spot so it
+         isn't still moving when the smooth scroll stops. At the landing spot
+         the section top is 72px (80px at md) down, so progress is
+         (viewport height - offset) / section height, which passes 60% on any
+         realistic viewport. */
+      animation-range: entry 0% entry 60%;
     }
   }
 }
