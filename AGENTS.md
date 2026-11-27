@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Personal portfolio for `cherrblyria.github.io` — plain static HTML/CSS/JS, no framework/bundler/tests/lint. Deployed by GitHub Pages from repo root.
+Personal portfolio for `cherrblyria.github.io`: plain static HTML/CSS/JS, no framework/bundler/tests/lint. Deployed by GitHub Pages from repo root.
 
 ## Commands
 
@@ -18,7 +18,7 @@ npm run format              # Prettier --write . (whole repo)
 
 ## Generated CSS / Tailwind v4
 
-- `src/output.css` is **gitignored** and linked by `index.html`; fresh clones look unstyled until generated. Never hand-edit it.
+- `src/output.css` is gitignored and linked by `index.html`; fresh clones look unstyled until generated. Never hand-edit it.
 - No `tailwind.config.*` or Prettier config files. Tailwind v4 theme tokens live in `@theme` in `src/input.css`; dark mode overrides CSS variables in a `prefers-color-scheme: dark` block. Edit `src/input.css` and Tailwind classes in `index.html`, then regenerate.
 
 ## Layout / Behavior
@@ -29,7 +29,7 @@ npm run format              # Prettier --write . (whole repo)
 
 ## Deploy
 
-- `.github/workflows/deploy.yml`: push to `main` (or manual dispatch) runs `npm ci`, builds CSS with `npx tailwindcss -i ./src/input.css -o ./src/output.css`, then uploads the whole repo as the Pages artifact. Only `main` deploys.
+- `.github/workflows/deploy.yml`: push to `main` (or manual dispatch) runs `npm ci` on Node 22, builds CSS with `npx tailwindcss -i ./src/input.css -o ./src/output.css`, then uploads the whole repo as the Pages artifact. Only `main` deploys.
 
 ## Conventions
 
