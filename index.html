@@ -183,24 +183,24 @@
           class="section-reveal border-edge bg-surface/75 relative isolate rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-10 xl:p-14"
         >
           <div class="pointer-events-none relative z-10 max-w-[65ch]">
-            <p class="text-lg md:text-xl">
+            <p class="indent-8 text-lg md:text-xl">
               I'm Nutty, aka Cherrblyria (<s>deadname</s> real name withheld), a
               Thai middle schooler in my last year who loves doing tech-related
               stuff, especially on the customization/personalization side. I
               wanna be a software engineer, yet I'm still
               <i class="font-playfair-display italic">genuinely silly</i>.
             </p>
-            <p class="mt-5 text-lg md:text-xl">
+            <p class="mt-5 indent-8 text-lg md:text-xl">
               I found myself deep in the Linux ricing rabbit hole after
               switching to Linux, and now I'm using NixOS — which might be my
               endgame.
             </p>
-            <p class="mt-5 text-lg md:text-xl">
+            <p class="mt-5 indent-8 text-lg md:text-xl">
               I'm also still figuring out what I want to specialize in. There's
               a lot I'd like to explore, and I don't really want to limit myself
               to one thing just yet.
             </p>
-            <p class="mt-5 text-lg md:text-xl">
+            <p class="mt-5 indent-8 text-lg md:text-xl">
               Anyway, that's a little about me. Thanks for stopping by!
             </p>
           </div>
@@ -392,12 +392,35 @@
           class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
         >
           <div>
-            <p class="font-fraunces text-2xl md:text-3xl">Languages</p>
+            <p
+              class="font-fraunces flex items-center gap-2 text-2xl md:text-3xl"
+            >
+              <svg
+                class="text-accent size-6 shrink-0"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8.7 6.3a1 1 0 0 1 0 1.4L4.42 12l4.3 4.3a1 1 0 1 1-1.42 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.42 0Zm6.6 0a1 1 0 0 1 1.42 0l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.42-1.4l4.3-4.3-4.3-4.3a1 1 0 0 1 0-1.4Z"
+                />
+              </svg>
+              Languages
+            </p>
             <p class="text-ink-soft mt-3 text-sm md:text-base">
-              The basics, for now.
+              Things I'm learning and using.
             </p>
           </div>
           <div class="mt-8 flex flex-wrap gap-2">
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >Nix</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >Python</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >Bash</span
+            >
             <span class="border-edge rounded-full border px-3 py-1 text-xs"
               >HTML</span
             >
@@ -405,7 +428,7 @@
               >CSS</span
             >
             <span class="border-edge rounded-full border px-3 py-1 text-xs"
-              >+ more soon</span
+              >JavaScript</span
             >
           </div>
         </div>
@@ -413,7 +436,19 @@
           class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
         >
           <div>
-            <p class="font-fraunces text-2xl md:text-3xl">
+            <p
+              class="font-fraunces flex items-center gap-2 text-2xl md:text-3xl"
+            >
+              <svg
+                class="text-accent size-6 shrink-0"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6v2H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-2v-2h6a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H4Zm0 2h16v8H4V7Z"
+                />
+              </svg>
               Desktop &amp; customization
             </p>
             <p class="text-ink-soft mt-3 text-sm md:text-base">
@@ -436,7 +471,21 @@
           class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
         >
           <div>
-            <p class="font-fraunces text-2xl md:text-3xl">Workflow</p>
+            <p
+              class="font-fraunces flex items-center gap-2 text-2xl md:text-3xl"
+            >
+              <svg
+                class="text-accent size-6 shrink-0"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 3a1 1 0 0 1 1 1v1h8V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1V4a1 1 0 0 1 1-1Zm12 8H5v7h14v-7ZM6 7H5v2h14V7h-1v1a1 1 0 1 1-2 0V7H8v1a1 1 0 0 1-2 0V7Z"
+                />
+              </svg>
+              Workflow
+            </p>
             <p class="text-ink-soft mt-3 text-sm md:text-base">
               Still figuring this part out.
             </p>
