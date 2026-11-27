@@ -31,7 +31,7 @@
       class="pointer-events-none fixed top-0 right-0 left-0 z-1000 px-5 pt-5 md:px-[8%]"
     >
       <div
-        class="border-edge bg-surface pointer-events-auto mx-auto grid w-[80%] max-w-[90%] grid-cols-2 items-center gap-1 overflow-hidden rounded-full border-2 p-2 pl-4.5 transition-all duration-300 ease-in-out motion-reduce:transition-none md:grid-cols-[1fr_auto_1fr] md:gap-6 md:p-4 md:pl-6.5"
+        class="border-edge bg-surface pointer-events-auto mx-auto grid w-[80%] max-w-[90%] grid-cols-2 items-center gap-1 overflow-hidden rounded-full border-2 p-2 pl-4.5 transition-all duration-300 ease-in-out motion-reduce:transition-none md:grid-cols-[1fr_auto_1fr] md:gap-6 md:p-4 md:pl-6.5 xl:max-w-7xl"
       >
         <a
           href="#top"
@@ -61,18 +61,18 @@
       </div>
     </header>
 
-    <main class="grid grid-flow-row gap-5 pt-23 md:gap-10 md:pt-27">
+    <main class="mx-auto grid w-full max-w-7xl gap-4 pt-20 md:gap-8 md:pt-27">
       <section
         id="home"
-        class="grid grid-cols-2 grid-rows-4 justify-items-stretch gap-5 md:h-155 md:grid-cols-4 md:grid-rows-2"
+        class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-5"
       >
         <div
-          class="border-edge bg-surface/75 relative isolate col-span-2 row-span-2 rounded-3xl border-2 p-12 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none"
+          class="border-edge bg-surface/75 relative isolate col-span-1 rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none sm:col-span-2 md:p-10 lg:col-span-1 xl:p-14"
         >
           <div
-            class="hover:shadow-accent absolute top-118 right-5 z-0 hidden size-30 rounded-full bg-[url(/assets/pfp.webp)] bg-cover bg-center transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-[0px_0px_12px_0px] motion-reduce:transition-none min-[67em]:max-[75em]:top-5 min-[75em]:top-70 min-[87em]:top-5 md:flex"
+            class="hover:shadow-accent absolute top-6 right-6 z-0 hidden size-24 rounded-full bg-[url(/assets/pfp.webp)] bg-cover bg-center transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-[0px_0px_12px_0px] motion-reduce:transition-none md:flex lg:size-28"
           ></div>
-          <div class="pointer-events-none relative z-10 max-w-[65ch]">
+          <div class="pointer-events-none relative z-10 max-w-[65ch] md:pr-28">
             <h1 class="font-fraunces text-5xl">
               Hai, it's me
               <span
@@ -99,60 +99,74 @@
         </div>
 
         <div
-          class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg motion-reduce:transition-none md:text-balance"
+          class="grid grid-cols-1 gap-4 sm:col-span-2 sm:grid-cols-2 lg:col-span-1"
         >
-          <a href="#about">
-            <p class="font-fraunces text-lg font-medium md:text-2xl">
-              Get to know me
-            </p>
-            <p class="mt-2 md:text-xl">
-              A little more about who I am and
-              <i class="font-playfair-display">who I'd be.</i>
-            </p>
-          </a>
-        </div>
-        <div
-          class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg motion-reduce:transition-none md:text-balance"
-        >
-          <a href="#projects">
-            <p class="font-fraunces text-lg font-medium md:text-2xl">
-              My little boxes
-            </p>
-            <p class="mt-2 md:text-xl">
-              Things I've built, used, or just <i>vibe coded</i>.
-            </p>
-          </a>
-        </div>
-        <div
-          class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg motion-reduce:transition-none md:text-balance"
-        >
-          <a href="#stack">
-            <p class="font-fraunces text-lg font-medium md:text-2xl">
-              Under the hood
-            </p>
-            <p class="mt-2 md:text-xl">My tools, tech, and things.</p>
-          </a>
-        </div>
-        <div
-          class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty shadow transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 motion-reduce:transition-none md:text-balance"
-        >
-          <a href="#contact">
-            <p class="font-fraunces text-lg font-medium md:text-2xl">
-              Find me here
-            </p>
-            <p class="mt-2 md:text-xl">
-              Have something to tell me? Drop me a message
-            </p>
-          </a>
+          <div
+            class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg motion-reduce:transition-none md:p-8 md:text-balance lg:p-5 xl:p-8"
+          >
+            <a href="#about">
+              <p
+                class="font-fraunces text-lg font-medium md:text-2xl lg:text-xl xl:text-2xl"
+              >
+                Get to know me
+              </p>
+              <p class="mt-2 md:text-xl lg:text-base xl:text-xl">
+                A little more about who I am and
+                <i class="font-playfair-display">who I'd be.</i>
+              </p>
+            </a>
+          </div>
+          <div
+            class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg motion-reduce:transition-none md:p-8 md:text-balance lg:p-5 xl:p-8"
+          >
+            <a href="#projects">
+              <p
+                class="font-fraunces text-lg font-medium md:text-2xl lg:text-xl xl:text-2xl"
+              >
+                My little boxes
+              </p>
+              <p class="mt-2 md:text-xl lg:text-base xl:text-xl">
+                Things I've built, used, or just <i>vibe coded</i>.
+              </p>
+            </a>
+          </div>
+          <div
+            class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-lg motion-reduce:transition-none md:p-8 md:text-balance lg:p-5 xl:p-8"
+          >
+            <a href="#stack">
+              <p
+                class="font-fraunces text-lg font-medium md:text-2xl lg:text-xl xl:text-2xl"
+              >
+                Under the hood
+              </p>
+              <p class="mt-2 md:text-xl lg:text-base xl:text-xl">
+                My tools, tech, and things.
+              </p>
+            </a>
+          </div>
+          <div
+            class="border-edge bg-surface/75 flex items-center justify-center rounded-3xl border-2 p-6 text-center text-pretty shadow transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 motion-reduce:transition-none md:p-8 md:text-balance lg:p-5 xl:p-8"
+          >
+            <a href="#contact">
+              <p
+                class="font-fraunces text-lg font-medium md:text-2xl lg:text-xl xl:text-2xl"
+              >
+                Find me here
+              </p>
+              <p class="mt-2 md:text-xl lg:text-base xl:text-xl">
+                Have something to tell me? Drop me a message
+              </p>
+            </a>
+          </div>
         </div>
       </section>
 
       <section
         id="about"
-        class="grid scroll-mt-18 grid-cols-2 justify-items-stretch gap-5 md:h-155 md:scroll-mt-20 md:grid-cols-2 md:grid-rows-2"
+        class="grid scroll-mt-18 grid-cols-1 gap-4 md:scroll-mt-20 md:gap-5 lg:grid-cols-[1.4fr_1fr]"
       >
         <div
-          class="section-reveal border-edge bg-surface/75 relative isolate col-span-2 row-span-2 rounded-3xl border-2 p-12 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none"
+          class="section-reveal border-edge bg-surface/75 relative isolate rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-10 xl:p-14"
         >
           <div class="pointer-events-none relative z-10 max-w-[65ch]">
             <h2 class="font-fraunces text-5xl">
@@ -180,55 +194,258 @@
               endgame.
             </p>
             <p class="mt-5 text-lg md:text-xl">
-              I lowk don't know what to write here anymore, so… umm, that's it,
-              I guess…
+              I'm also still figuring out what I want to specialize in. There's
+              a lot I'd like to explore, and I don't really want to limit myself
+              to one thing just yet.
+            </p>
+            <p class="mt-5 text-lg md:text-xl">
+              Anyway, that's a little about me. Thanks for stopping by!
             </p>
           </div>
+        </div>
+
+        <div
+          class="section-reveal border-edge bg-surface/75 relative isolate flex items-center justify-center rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-10 xl:p-14"
+        >
+          <p
+            class="font-dm-sans text-ink-soft text-center text-sm font-medium select-none md:text-base"
+          >
+            still writing — work in progress
+          </p>
         </div>
       </section>
 
       <section
         id="projects"
-        class="grid scroll-mt-18 grid-cols-2 justify-items-stretch gap-5 md:h-155 md:scroll-mt-20 md:grid-cols-2 md:grid-rows-2"
+        class="grid scroll-mt-18 grid-cols-1 gap-4 sm:grid-cols-2 md:scroll-mt-20 md:gap-5 lg:grid-cols-3"
       >
-        <div
-          class="section-reveal border-edge bg-surface/75 relative isolate col-span-2 row-span-2 flex items-center justify-center rounded-3xl border-2 p-12 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none"
-        >
+        <div class="section-reveal col-span-full flex flex-col gap-1 px-1">
+          <h2 class="font-fraunces text-3xl md:text-4xl">
+            My little
+            <span
+              class="text-accent hover:text-shadow-accent font-playfair-display pointer-events-auto font-black italic transition-normal duration-750 ease-in-out hover:text-shadow-lg motion-reduce:transition-none"
+              >boxes</span
+            >
+          </h2>
           <p
-            class="font-dm-sans text-ink-soft text-center text-sm font-medium select-none md:text-base"
+            class="font-dm-sans text-sm font-medium text-indigo-400 md:text-base dark:text-indigo-300"
           >
-            still building — work in progress
+            Things I've built, used, or just vibe coded.
           </p>
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 border-dashed p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">something small</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              Details once it's ready.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span
+              class="bg-accent/20 text-on-accent dark:text-accent rounded-full px-3 py-1 text-xs font-medium"
+              >soon</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >idea</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >building</span
+            >
+          </div>
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 border-dashed p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">something covering</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              Details once it's ready.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span
+              class="bg-accent/20 text-on-accent dark:text-accent rounded-full px-3 py-1 text-xs font-medium"
+              >soon</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >idea</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >building</span
+            >
+          </div>
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 border-dashed p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">something else</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              Details once it's ready.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span
+              class="bg-accent/20 text-on-accent dark:text-accent rounded-full px-3 py-1 text-xs font-medium"
+              >soon</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >idea</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >building</span
+            >
+          </div>
         </div>
       </section>
 
       <section
         id="stack"
-        class="grid scroll-mt-18 grid-cols-2 justify-items-stretch gap-5 md:h-155 md:scroll-mt-20 md:grid-cols-2 md:grid-rows-2"
+        class="grid scroll-mt-18 grid-cols-1 gap-4 sm:grid-cols-2 md:scroll-mt-20 md:gap-5 lg:grid-cols-3"
       >
-        <div
-          class="section-reveal border-edge bg-surface/75 relative isolate col-span-2 row-span-2 flex items-center justify-center rounded-3xl border-2 p-12 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none"
-        >
+        <div class="section-reveal col-span-full flex flex-col gap-1 px-1">
+          <h2 class="font-fraunces text-3xl md:text-4xl">
+            Under the
+            <span
+              class="text-accent hover:text-shadow-accent font-playfair-display pointer-events-auto font-black italic transition-normal duration-750 ease-in-out hover:text-shadow-lg motion-reduce:transition-none"
+              >hood</span
+            >
+          </h2>
           <p
-            class="font-dm-sans text-ink-soft text-center text-sm font-medium select-none md:text-base"
+            class="font-dm-sans text-sm font-medium text-indigo-400 md:text-base dark:text-indigo-300"
           >
-            still tinkering — work in progress
+            My tools, tech, and things.
           </p>
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">Languages</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              The basics, for now.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >HTML</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >CSS</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >+ more soon</span
+            >
+          </div>
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">
+              Desktop &amp; customization
+            </p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              The rabbit hole I fell into.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >Linux</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >NixOS</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >ricing in progress</span
+            >
+          </div>
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">Workflow</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              Still figuring this part out.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >GitHub</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >Roblox Studio</span
+            >
+            <span class="border-edge rounded-full border px-3 py-1 text-xs"
+              >+ more soon</span
+            >
+          </div>
         </div>
       </section>
 
       <section
         id="contact"
-        class="grid scroll-mt-18 grid-cols-2 justify-items-stretch gap-5 md:h-155 md:scroll-mt-20 md:grid-cols-2 md:grid-rows-2"
+        class="grid scroll-mt-18 grid-cols-1 gap-4 sm:grid-cols-2 md:scroll-mt-20 md:gap-5 lg:grid-cols-3"
       >
-        <div
-          class="section-reveal border-edge bg-surface/75 relative isolate col-span-2 row-span-2 flex items-center justify-center rounded-3xl border-2 p-12 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none"
-        >
+        <div class="section-reveal col-span-full flex flex-col gap-1 px-1">
+          <h2 class="font-fraunces text-3xl md:text-4xl">
+            Find me
+            <span
+              class="text-accent hover:text-shadow-accent font-playfair-display pointer-events-auto font-black italic transition-normal duration-750 ease-in-out hover:text-shadow-lg motion-reduce:transition-none"
+              >here</span
+            >
+          </h2>
           <p
-            class="font-dm-sans text-ink-soft text-center text-sm font-medium select-none md:text-base"
+            class="font-dm-sans text-sm font-medium text-indigo-400 md:text-base dark:text-indigo-300"
           >
-            still wiring up — work in progress
+            Have something to tell me? Drop me a message.
           </p>
+        </div>
+        <a
+          href="https://github.com/cherrblyria"
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">GitHub</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              Where the repos (eventually) live.
+            </p>
+          </div>
+          <span
+            class="border-edge mt-8 w-fit rounded-full border px-3 py-1 text-xs"
+            >cherrblyria ↗</span
+          >
+        </a>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 border-dashed p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">Email</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              Wiring up the mailbox soon.
+            </p>
+          </div>
+          <span
+            class="bg-accent/20 text-on-accent dark:text-accent mt-8 w-fit rounded-full px-3 py-1 text-xs font-medium"
+            >coming soon</span
+          >
+        </div>
+        <div
+          class="section-reveal border-edge bg-surface/75 flex min-h-52 flex-col justify-between rounded-3xl border-2 border-dashed p-6 transition delay-10 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:shadow-lg motion-reduce:transition-none md:p-8"
+        >
+          <div>
+            <p class="font-fraunces text-2xl md:text-3xl">Socials</p>
+            <p class="text-ink-soft mt-3 text-sm md:text-base">
+              No links here yet, sorry!
+            </p>
+          </div>
+          <span
+            class="bg-accent/20 text-on-accent dark:text-accent mt-8 w-fit rounded-full px-3 py-1 text-xs font-medium"
+            >coming soon</span
+          >
         </div>
       </section>
     </main>
