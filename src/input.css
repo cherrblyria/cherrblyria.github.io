@@ -15,6 +15,7 @@
   --color-edge: var(--color-mauve-400);
   --color-ink: var(--color-mauve-900);
   --color-ink-soft: var(--color-mauve-500);
+  --color-ink-card: var(--color-mauve-600);
   --color-grid-line: --alpha(var(--color-ink-soft) / 10%);
 
   --background-image-grid:
@@ -28,6 +29,7 @@
     --color-surface: var(--color-mauve-800);
     --color-edge: var(--color-mauve-700);
     --color-ink: var(--color-mauve-100);
+    --color-ink-card: var(--color-mauve-400);
   }
 }
 
