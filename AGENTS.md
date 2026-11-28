@@ -19,6 +19,7 @@ npm run format              # Prettier --write . (whole repo)
 ## Generated CSS / Tailwind v4
 
 - `src/output.css` is gitignored and linked by `index.html`; fresh clones look unstyled until generated. Never hand-edit it.
+- Flaticon Uicons are loaded from the CDN in `index.html`; interface icons use the regular-rounded stylesheet (`fi-rr-*`) and brand icons use the brands stylesheet (`fi-brands-*`).
 - No `tailwind.config.*` or Prettier config files. Tailwind v4 theme tokens live in `@theme` in `src/input.css`; dark mode overrides CSS variables in a `prefers-color-scheme: dark` block. Edit `src/input.css` and Tailwind classes in `index.html`, then regenerate.
 
 ## Layout / Behavior
